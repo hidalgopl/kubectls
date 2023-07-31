@@ -20,7 +20,7 @@ Good news! `kubectls` is here to help you!
 - edit
 
 # Install
-Download a binary for your OS/ARCH from releases page: https://github.com/hidalgopl/kubectls/release
+Download a binary for your OS/ARCH from releases page: https://github.com/hidalgopl/kubectls/releases
 Add it to your `$PATH`.
 
 Try it with `kubectls --context=my-context-1,my-context-2 get pods -A` !
