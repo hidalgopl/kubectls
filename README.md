@@ -11,7 +11,6 @@ Good news! `kubectls` is here to help you!
 
 # Demo
 
-[![asciicast](https://asciinema.org/a/sM4ogGmfBnk0wBC31K5RK3n88.svg)](https://asciinema.org/a/sM4ogGmfBnk0wBC31K5RK3n88)
 
 # Commands not supported
 - exec

@@ -45,6 +45,7 @@ func main() {
 		currentColor := Colors[i]
 		cmd := buildKubectlCommandForContext(k8sCtx, kubectlArgs)
 		fmt.Printf("%s---------------------------------------------------------------------------------------\n", currentColor)
+		fmt.Printf("(%s) $ %s\n", strings.ToUpper(k8sCtx), cmd.String())
 		output, err := cmd.CombinedOutput()
 		if err != nil {
 			fmt.Printf("got errors: %w", err)
