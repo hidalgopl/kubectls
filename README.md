@@ -10,7 +10,21 @@ Good news! `kubectls` is here to help you!
 
 
 # Demo
-
+```shell
+$ ./kubectls --context=leafcloud,fuga get tidbcluster -n tidb
+---------------------------------------------------------------------------------------
+(LEAFCLOUD) $ /usr/local/bin/kubectl --context leafcloud get tidbcluster -n tidb
+NAME   READY   PD                  STORAGE   READY   DESIRE   TIKV                     STORAGE   READY   DESIRE   TIDB                     READY   DESIRE   AGE
+leaf   True    pingcap/pd:v7.1.0   2Gi       1       1        elotl/tikv:v7.1.0-wget   2Gi       1       1        elotl/tidb:v7.1.0-wget   1       1        26h
+ 
+--------------------------------------------------------------------------------------- 
+---------------------------------------------------------------------------------------
+(FUGA) $ /usr/local/bin/kubectl --context fuga get tidbcluster -n tidb
+NAME   READY   PD                  STORAGE   READY   DESIRE   TIKV                     STORAGE   READY   DESIRE   TIDB                     READY   DESIRE   AGE
+fuga   True    pingcap/pd:v7.1.0   2Gi       1       1        elotl/tikv:v7.1.0-wget   2Gi       1       1        elotl/tidb:v7.1.0-wget   1       1        26h
+ 
+--------------------------------------------------------------------------------------- 
+```
 
 # Commands not supported
 - exec
